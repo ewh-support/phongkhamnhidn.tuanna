@@ -200,6 +200,7 @@ html body {background-color:#ffffff;
 #header .header_html { 
 	top:20px; 
 	right:0px; 
+	width: 480px;
 } 
 
 .services_inner .media_box figure .preloader, 
