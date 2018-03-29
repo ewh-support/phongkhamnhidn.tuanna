@@ -18,52 +18,7 @@
 		#map {
 			height: 400px;
 			width: 100%;
-		   }</style></head><body class="page"><section id="page" class="csstransition cmsms_resp hfeed site"><div class="container"><header id="header"><div class="header_inner"><div class="custom_header"><div class="header_html"><span class="contact_widget_phone">Liên hệ: <span></span> 0905. 472 .966 - 0987. 695 .838 </span><span class="contact_widget_email"><span></span> <a href="mailto:tranlongquanyb@gmail.com">tranlongquanyb@gmail.com</a></span></div><div class="wrap_social_icons"><ul class="social_icons"><li><a target="_blank" href="#" title="#"><img src="/assets/images/img/facebook.png" alt="#">Facebook</a></li><li><a target="_blank" href="#" title="#"><img src="/assets/images/img/skype.png" alt="#">Skype</a></li></ul><div class="cl"></div><a href="#" class="social_toggle"><span></span></a></div></div><a href="/" title="Medicure" class="logo"><img src="/assets/images/logo-dn.jpg" style="width:820px; height: 85px" alt="Medicure"> </a><a class="responsive_nav" href="javascript:void(0);"><span></span></a><div class="wrap_nav"><nav role="navigation"><ul id="navigation" class="navigation"><li class="menu-item"><a href="/"><span>TRANG CHỦ</span></a></li><li class="menu-item"><a href="/bacsi"><span>BÁC SĨ</span></a></li><li class="menu-item"><a href="/dichvu"><span>CẨM NANG SỨC KHỎE</span></a></li><li class="menu-item"><a href="/phongkham"><span>HÌNH ẢNH PHÒNG KHÁM</span></a></li><li class="menu-item current_page_item"><a href="/lienhe"><span>LIÊN HỆ</span></a></li></ul><div class="cl"></div><div class="wrap_header_search"><a class="search_but cmsms_icon" href="javascript:void(0);"></a><div class="search_line"><form method="get" action="#"><p><input name="s" id="error_search" placeholder="Nhập từ khóa" type="text"> <input type="submit"></p></form></div></div></nav><div class="cl"></div></div><div class="cl"></div></div><div class="cl"></div></header><section id="middle"><div class="headline"><h1>Địa chỉ</h1></div><div class="cmsms_breadcrumbs"><a href="index.html" class="cms_home">Trang chủ</a> <span class="breadcrumbs_sep">/ </span><span>Liên hệ</span></div><div class="content_wrap r_sidebar"><section id="content" role="main"><div class="entry"><div class="cmsms_cc"><div class="one_first first_column"><div class="resizable_block"><div id="map"></div></div><script>function initMap() {
-										  var uluru = {lat: 16.053916, lng: 108.238408};
-										  var map = new google.maps.Map(document.getElementById('map'), {
-											zoom: 16,
-											center: uluru
-										  });
-										  var marker = new google.maps.Marker({
-											position: uluru,
-											map: map
-										  });
-										}</script><script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUt1uwP6y9s30ONw87eadzSVbfK-2xKRo&callback=initMap"></script></div><div class="one_first first_column"><div class="cl"></div></div><div class="one_first first_column"><div class="cmsms-form-builder"><div class="box success_box" style="display:none"><table><tr><td>&nbsp;</td><td>Thank You!<br>Your message has been sent successfully.</td></tr></table></div><script type="text/javascript">jQuery(document).ready(function () { 
-												jQuery('#contactform').validationEngine('init');
-												
-												jQuery('#contactform a#contact_form_formsend').click(function () { 
-													var form_builder_url = jQuery('#contact_form_url').val();
-													
-													jQuery('#contactform .loading').animate( { opacity : 1 }, 250);
-													
-													if (jQuery('#contactform').validationEngine('validate')) { 
-														jQuery.post(form_builder_url, { 
-															contact_name : jQuery('#contact_name').val(), 
-															contact_email : jQuery('#contact_email').val(), 
-															contact_url : jQuery('#contact_url').val(), 
-															contact_subject : jQuery('#contact_subject').val(), 
-															contact_message : jQuery('#contact_message').val(), 
-															formname : 'contact_form', 
-															formtype : 'contactf' 
-														}, function () { 
-															jQuery('#contactform .loading').animate( { opacity : 0 }, 250);
-															
-															document.getElementById('contactform').reset();
-															
-															jQuery('#contactform').parent().find('.box').hide();
-															jQuery('#contactform').parent().find('.success_box').fadeIn('fast');
-															jQuery('html, body').animate( { scrollTop : jQuery('#contactform').offset().top - 100 }, 'slow');
-															jQuery('#contactform').parent().find('.success_box').delay(5000).fadeOut(1000);
-														} );
-														
-														return false;
-													} else { 
-														jQuery('#contactform .loading').animate( { opacity : 0 }, 250);
-														
-														return false;
-													}
-												} );
-											} );</script><form action="#" method="post" id="contactform"><div class="form_info cmsms_input"><label for="contact_name">Tên <span class="color2">*</span></label><input type="text" name="contact_name" id="contact_name" size="22" tabindex="3" class="validate[required,minSize[3],maxSize[100],custom[onlyLetterSp]]"/></div><div class="cl"></div><div class="form_info cmsms_input"><label for="contact_email">Địa chỉ mail <span class="color2">*</span></label><input type="text" name="contact_email" id="contact_email" size="22" tabindex="4" class="validate[required,custom[email]]"/></div><div class="cl"></div><div class="form_info cmsms_input"><label for="contact_subject">Tiêu đề <span class="color2">*</span></label><input type="text" name="contact_subject" id="contact_subject" size="22" tabindex="6" class="validate[required,minSize[3],maxSize[100]]"/></div><div class="cl"></div><div class="form_info cmsms_textarea"><label for="contact_message">Tin nhắn <span class="color2">*</span></label><textarea name="contact_message" id="contact_message" cols="28" rows="6" tabindex="7" class="validate[required,minSize[3]]"></textarea></div><div class="cl"></div><div class="cl"></div><div><input type="hidden" name="contact_form_url" id="contact_form_url" value="http://medicure-html.cmsmasters.net/php/sendmail.php"/></div><div><a href="#" class="button" id="contact_form_formsend" tabindex="8"><span>Gửi tin nhắn</span></a><div class="loading"></div></div></form></div></div></div></div></section><section id="sidebar"><div class="one_first"><aside id="search-2" class="widget widget_search"><div class="search_line"><form method="get" action="#"><p><input name="s" id="error_search_2" placeholder="Nhập từ khóa" type="text"> <input></p></form></div></aside></div><div class="cl"></div></section><div class="cl"></div></div></section><div id="cmsms_latest_bottom_tweets"><div class="cmsms_latest_bottom_tweets_inner"><span class="tweets_icon"></span><ul class="jta-tweet-list responsiveContentSlider"><li class="jta-tweet-list-item">Địa chỉ: 20 Nguyễn Văn Thoại – Ngũ Hành Sơn – Đà Nẵng</li></ul></div></div><script type="text/javascript">jQuery(document).ready(function () { 
+		   }</style></head><body class="page"><section id="page" class="csstransition cmsms_resp hfeed site"><div class="container"><header id="header"><div class="header_inner"><div class="custom_header"><div class="header_html"><span class="contact_widget_phone">Liên hệ: <span></span> 0905. 472 .966 - 0987. 695 .838 </span><span class="contact_widget_email"><span></span> <a href="mailto:tranlongquanyb@gmail.com">tranlongquanyb@gmail.com</a></span></div><div class="wrap_social_icons"><ul class="social_icons"><li><a target="_blank" href="#" title="#"><img src="/assets/images/img/facebook.png" alt="#">Facebook</a></li><li><a target="_blank" href="#" title="#"><img src="/assets/images/img/skype.png" alt="#">Skype</a></li></ul><div class="cl"></div><a href="#" class="social_toggle"><span></span></a></div></div><a href="/" title="Medicure" class="logo"><img src="/assets/images/logo-dn.jpg" style="width:820px; height: 85px" alt="Medicure"> </a><a class="responsive_nav" href="javascript:void(0);"><span></span></a><div class="wrap_nav"><nav role="navigation"><ul id="navigation" class="navigation"><li class="menu-item"><a href="/"><span>TRANG CHỦ</span></a></li><li class="menu-item"><a href="/bacsi"><span>BÁC SĨ</span></a></li><li class="menu-item"><a href="/dichvu"><span>CẨM NANG SỨC KHỎE</span></a></li><li class="menu-item current_page_item"><a href="/phongkham"><span>HÌNH ẢNH PHÒNG KHÁM</span></a></li><li class="menu-item"><a href="/lienhe"><span>LIÊN HỆ</span></a></li></ul><div class="cl"></div><div class="wrap_header_search"><a class="search_but cmsms_icon" href="javascript:void(0);"></a><div class="search_line"><form method="get" action="#"><p><input name="s" id="error_search" placeholder="Nhập từ khóa" type="text"> <input type="submit"></p></form></div></div></nav><div class="cl"></div></div><div class="cl"></div></div><div class="cl"></div></header><section id="middle"><div class="headline"><h1>Hình ảnh</h1></div><div class="cmsms_breadcrumbs"><a href="index.html" class="cms_home">Trang chủ</a> <span class="breadcrumbs_sep">/ </span><span>Phòng khám</span></div><div class="content_wrap r_sidebar"><section id="content" role="main"><h5>Một số hình ảnh của Phòng khám</h5><div class="entry"><img width="820" height="465" src="/img/anh2.jpg" class="fullwidth" alt="Dr. Michael Linden" title="Dr. Michael Linden"/></div><br><div class="entry"><img width="820" height="465" src="/img/anh1.jpg" class="fullwidth" alt="Dr. Michael Linden" title="Dr. Michael Linden"/></div></section><section id="sidebar"><div class="one_first"><aside id="search-2" class="widget widget_search"><div class="search_line"><form method="get" action="#"><p><input name="s" id="error_search_2" placeholder="Nhập từ khóa" type="text"> <input></p></form></div></aside></div><div class="cl"></div></section><div class="cl"></div></div></section><div id="cmsms_latest_bottom_tweets"><div class="cmsms_latest_bottom_tweets_inner"><span class="tweets_icon"></span><ul class="jta-tweet-list responsiveContentSlider"><li class="jta-tweet-list-item">Địa chỉ: 20 Nguyễn Văn Thoại – Ngũ Hành Sơn – Đà Nẵng</li></ul></div></div><script type="text/javascript">jQuery(document).ready(function () { 
 				jQuery('#cmsms_latest_bottom_tweets .jta-tweet-list').cmsmsResponsiveContentSlider( {
 					sliderWidth : '100%',
 					sliderHeight : 'auto',
